@@ -93,11 +93,3 @@ The script will execute the following steps automatically:
 2.  **Save Best Model**: During training, it will continuously save the version of the model that achieves the highest F1-score on the validation set to a file named `best_model.pth`.
 3.  **Generate Submission**: After training is complete, it will load `best_model.pth`, run predictions on all images in the `test_set_images/` directory, and generate the final `submission.csv` file.
 4.  **Cleanup**: It will automatically remove any temporary directories created during the data splitting process.
-
-## Customization
-
-You can easily modify the training behavior by changing the constants at the top of the `run.py` script. Key parameters include:
--   `ENCODER`: Change the backbone of the U-Net (e.g., `'resnet50'`, `'efficientnet-b4'`).
--   `EPOCHS`: Adjust the number of training rounds.
--   `BATCH_SIZE`: Change the batch size depending on your GPU memory.
--   `LEARNING_RATE`: Modify the initial learning rate for the optimizer.
