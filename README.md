@@ -92,4 +92,3 @@ The script will execute the following steps automatically:
 1.  **Start Training**: It will load the training data, set up the U-Net model, and begin the training and validation process for the number of epochs defined in the script.
 2.  **Save Best Model**: During training, it will continuously save the version of the model that achieves the highest F1-score on the validation set to a file named `best_model.pth`.
 3.  **Generate Submission**: After training is complete, it will load `best_model.pth`, run predictions on all images in the `test_set_images/` directory, and generate the final `submission.csv` file.
-4.  **Cleanup**: It will automatically remove any temporary directories created during the data splitting process.
